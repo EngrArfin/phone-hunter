@@ -11,6 +11,14 @@ const displayPhones = phones =>{
     //deployed 20 phones only 
     phones = phones.slice(0, 5)
 
+    const noPhone = document.getElementById('no-found-message');
+    if(phones.length ===0){
+        noPhone.classList.remove('d-none');
+    }
+    else{
+        noPhone.classList.add('d-none');
+    }
+
     phones.forEach(phone =>{
         const phoneDiv = document.createElement('div');
         phoneDiv.classList.add('col');
