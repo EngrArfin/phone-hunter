@@ -8,7 +8,7 @@
     <title>Phone Hunter</title>
 </head>
 <body>
-    <header class="bg-primary p-3 m-4">
+    <header class="bg-primary text-white p-3 m-4">
         <h1>Welcome To Our iPhone Hunter Shop</h1>
 
     </header>
@@ -21,11 +21,20 @@
         </section>
         <section>
             <div id="phones-container" class="row row-cols-1 row-cols-md-3 g-4">
-                
+
             </div>
             <div id="no-found-message" class="mt-4 d-none">
                 <h3 class="text-warning">No Phone Found . Please try a search  </h3>
             </div>
+        </section>
+        <!-- Loader -->
+        <section id="loader" class="d-none">
+            <div style="height: 400px;" class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border text-success" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+            
         </section>
     </main>
     <script src="js/hunter.js"></script>
